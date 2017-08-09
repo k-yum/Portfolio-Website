@@ -65,16 +65,6 @@ li {
   }
 }*/
 
-/*MAKING THE DIV STAY AT TOP WHILE SCROLLING:
-
-  either use position:absolute for all subjects and manipulate height like that OR use javascript
-
-*/
-
-.about {
-  overflow: hidden;
-}
-
 #aboutCol1 {
   background-color: firebrick;
   height: 2500px;
@@ -82,11 +72,13 @@ li {
 
 .callout {
   background-color: firebrick;
+  border-color: firebrick;
   text-align: center;
   margin-top: 300px;
 }
 
-.bottom {
+/* make media query to change margin-top or make display: 'hidden' */
+.aboutSbottom {
   background-color: firebrick;
   text-align: center;
   margin-top: 1600px;
@@ -99,17 +91,32 @@ li {
 
 #projectCol1 {
   background-color: antiquewhite;
-  height: 100vh;
+  height: 2000px;
+}
+
+.projectScroll {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.projectSbottom {
+  text-align: center;
+  margin-top: 1130px;
 }
 
 #projectCol2 {
   background-color: firebrick;
-  height: 100vh;
+  height: 2000px;
 }
 
 #contactCol1 {
   background-color: firebrick;
   height: 100vh;
+}
+
+.contactScroll {
+  margin-top: 300px;
+  text-align: center;
 }
 
 #contactCol2 {
