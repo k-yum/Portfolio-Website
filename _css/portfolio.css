@@ -8,7 +8,7 @@
   background-image: url(../_images/space_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 750px;
   z-index: 1;
 }
 
@@ -77,13 +77,24 @@ li {
 
 #aboutCol1 {
   background-color: firebrick;
-  height: 100vh;
+  height: 2500px;
+}
+
+.callout {
+  background-color: firebrick;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.bottom {
+  background-color: firebrick;
+  text-align: center;
+  margin-top: 1600px;
 }
 
 #aboutCol2 {
   background-color: antiquewhite;
-  height: 100vh;
-  overflow-y: scroll;
+  height: 2500px;
 }
 
 #projectCol1 {
