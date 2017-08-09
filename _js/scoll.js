@@ -13,7 +13,7 @@ $(window).scroll(function () { // assign scroll event listener
     $('.callout').css({ // scroll to that element or below it
       position: 'fixed',
       top: '0px',
-      left: '300px'
+      left: '14.4%'
     });
     $('.aboutSbottom').css({
       visibility: 'hidden'
@@ -31,7 +31,7 @@ $(window).scroll(function () { // assign scroll event listener
     $('.projectScroll').css({ // scroll to that element or below it
       position: 'fixed',
       top: '0px',
-      left: '294px'
+      left: '10.5%'
     });
     $('.projectSbottom').css({
       visibility: 'hidden'
