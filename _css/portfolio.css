@@ -23,6 +23,22 @@
   src: url("../_fonts/Champagne & Limousines.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "custom4";
+  src: url("../_fonts/calendar note tfb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "custom5";
+  src: url("../_fonts/GeosansLight-Oblique.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "custom6";
+  src: url("../_fonts/CaviarDreams_Bold.ttf") format("truetype");
+}
+
+
 h1 {
   font-family: "funsized", sans-serif;
   font-size: 4.7em
@@ -39,8 +55,7 @@ h2 {
   color: yellow;
   position: relative;
   top: 180px;
-
-
+  text-shadow: 1px 1px black;
 }
 
 .resume {
@@ -113,7 +128,7 @@ ul {
   display: table;
   border-spacing: 40px 0px;
   margin: auto;
-  opacity: 0.8
+
 }
 
 li {
@@ -159,6 +174,8 @@ li {
     margin-left: 0px;
   }
 }*/
+
+/* Subject Containers */
 
 #aboutCol1 {
   background-color: firebrick;
@@ -217,4 +234,51 @@ li {
 #contactCol2 {
   background-color: antiquewhite;
   height: 100vh;
+}
+
+/* About Content */
+
+#aboutIntro {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.about h2 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: custom6;
+  color: black;
+  font-size: 2.7em;
+  font-weight: bold;
+}
+
+.about img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+#aboutImg1 {
+  margin-top: 40px;
+}
+
+.about h3 {
+  text-align: center;
+  margin: 20px;
+  font-family: custom3;
+  color: red;
+  font-weight: bold;
+}
+
+.about p {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+  color: dimgray;
 }
