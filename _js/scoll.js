@@ -27,7 +27,8 @@ $(window).scroll(function () { // assign scroll event listener
     });
   }
   
-  if (currentScroll >= projectTop && currentScroll <= projectBottom) { // apply position: fixed if you
+  //For when I have more than 1 project
+  /*if (currentScroll >= projectTop && currentScroll <= projectBottom) { // apply position: fixed if you
     $('.projectScroll').css({ // scroll to that element or below it
       position: 'fixed',
       top: '0px',
@@ -43,6 +44,6 @@ $(window).scroll(function () { // assign scroll event listener
     $('.projectSbottom').css({
       visibility: 'visible'
     });
-  }
+  }*/
 
 });

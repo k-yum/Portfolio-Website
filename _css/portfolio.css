@@ -44,6 +44,10 @@ h1 {
   font-size: 4.7em
 }
 
+.about h1, .contact h1 {
+  color: white;
+}
+
 h2 {
   font-family: "custom3";
   color: red;
@@ -52,9 +56,9 @@ h2 {
 
 .introName h1 {
   font-family: custom;
-  color: yellow;
+  color: #AD353A;
   position: relative;
-  top: 180px;
+  top: 120px;
   text-shadow: 1px 1px black;
 }
 
@@ -68,9 +72,42 @@ h2 {
   text-align: center;
   margin: auto;
   position: relative;
-  top: 330px;
+  top: 230px;
   padding-top: 15px;
   border-radius: 30px;
+}
+
+.resume a {
+  color: white;
+}
+
+.resume a:hover {
+  color: white; 
+}
+
+.resume:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 .about a {
@@ -105,7 +142,7 @@ h2 {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url('../_images/space_bg.jpg');
+  background: url('../_images/laptop.jpg');
   opacity: .92;
   content: "";
   z-index: -1;
@@ -124,7 +161,7 @@ h2 {
 ul {
   width: 1000px;
   position: relative;
-  top: 280px;
+  top: 180px;
   display: table;
   border-spacing: 40px 0px;
   margin: auto;
@@ -137,13 +174,34 @@ li {
   height: 70px;
   padding: 10px;
   text-align: center;
-  background-color: orangered;
+  background-color: ;
   vertical-align: middle;
   font-family: custom2;
-  color: aliceblue;
+  color: #AD353A;
   font-size: 1.6em;
   border: solid 2px ;
   border-radius: 20px;
+  transition-duration: 2s;
+}
+
+li a {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+li a:hover {
+  color: white;
+}
+
+li:hover {
+  background-color: #AD353A;
+  color: white;
+  transition-duration: 2s;
+}
+
+p a {
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 /*make li blocks same width and height as the table cells & make it vertical
@@ -178,32 +236,34 @@ li {
 /* Subject Containers */
 
 #aboutCol1 {
-  background-color: firebrick;
-  height: 2500px;
+  background-color: #AD353A;
+  height: 1600px;
 }
 
 .callout {
-  background-color: firebrick;
-  border-color: firebrick;
+  /*background-color: #AD353A;*/
+  /*#FBD10F*/
+  background-color: #AD353A;
+  border-color: #AD353A;
   text-align: center;
   margin-top: 300px;
 }
 
 /* make media query to change margin-top or make display: 'hidden' */
 .aboutSbottom {
-  background-color: firebrick;
+  background-color: #AD353A;
   text-align: center;
-  margin-top: 1600px;
+  margin-top: 700px;
 }
 
 #aboutCol2 {
   background-color: antiquewhite;
-  height: 2500px;
+  height: 1600px;
 }
 
 #projectCol1 {
   background-color: antiquewhite;
-  height: 2000px;
+  height: 750px;
 }
 
 .projectScroll {
@@ -217,12 +277,11 @@ li {
 }
 
 #projectCol2 {
-  background-color: firebrick;
-  height: 2000px;
+  height: 750px;
 }
 
 #contactCol1 {
-  background-color: firebrick;
+  background-color: #AD353A;
   height: 100vh;
 }
 
@@ -255,6 +314,7 @@ li {
   color: black;
   font-size: 2.7em;
   font-weight: bold;
+  word-spacing: 6px;
 }
 
 .about img {
@@ -282,3 +342,132 @@ li {
   margin-bottom: 60px;
   color: dimgray;
 }
+
+/* Project Content */
+
+#gotwoodH {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top : 150px;
+  color: black;
+  font-family: custom4;
+  font-size: 2.8em;
+  z-index: 2;
+}
+
+.projects h5 {
+  width: 120px;
+  text-align: center;
+  /*margin: auto;*/
+  position: relative;
+  top : 300px;
+  left: 320px;
+  color: black;
+  font-family: custom3;
+  font-size: 1.6em;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 20px;
+  z-index: 2;
+  background-color: indianred;
+  transition-duration: 1s;
+}
+
+.projects h5:hover {
+  background-color: bisque;
+  transition-duration: 1s;
+}
+
+.gotwoodPJ {
+  margin-right: 0px;
+  padding: 0px;
+  width: 104%;
+  height: 750px;
+  border: 1px 1px white;
+  /*margin-left: -15px;
+  margin-right: -15px;*/
+  margin-top: -110px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.gotwoodBG {
+  width: 100%;
+  height: 100%;
+  background-image: url(../_images/kitchen-2400367_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-direction: reverse;
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: .2s;
+  -webkit-transition-duration: 5s;
+}
+
+.gotwoodBG:hover {
+  opacity: 0.85;
+  -webkit-transform: scale(1.2);
+  -webkit-transition-delay: .2s;
+  -webkit-transition-duration: 5s;
+  -moz-transform: scale(1.2);
+  -moz-transition-delay: .2s;
+  -moz-transition-duration: 5s;
+  width:100%;
+  z-index: -2;
+}
+
+/* Contact content */
+  
+.contact h2 {
+  font-family: custom6;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  color: black;
+}
+
+.contact p {
+  font-family: custom3;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contact h3 {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: custom5;
+  color: dimgray;
+}
+
+#phone {
+  margin-top: 60px;
+}
+
+.contact img {
+  width: 70px;
+  margin: 30px 10px;
+}
+
+/* link underline animation */
+
+.about h4, .contact h4, .about h4 a, .contact h4 a {
+  color: white;
+}
+
+.project h4, .project h4 a {
+  color: black;
+}
+
+.about h4 a:hover, .contact h4 a:hover {
+  border-bottom: solid 2px white;
+}
+
+.projects h4 a:hover {
+  border-bottom: solid 2px black;
+}
+
+
