@@ -31,7 +31,3 @@ $('a[href*="#"]').each(function () {
   }
 });
 
-$('a').click(function(e)
-{
-    e.preventDefault();
-});
