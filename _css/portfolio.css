@@ -357,7 +357,7 @@ p a {
   font-weight: bold;
   letter-spacing: 1px;
   font-weight: ;
-  z-index: 2;
+  z-index: 1;
 }
 
 .projects button {
@@ -498,6 +498,24 @@ p a {
     background:  rgba(40,40,40, .75);
 }*/
 
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(225,225,225, 1);
+    overflow-y: scroll;
+    transition: 0.5s ease-out;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
 
 
 

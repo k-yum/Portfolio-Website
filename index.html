@@ -8,6 +8,7 @@
   <title>Kevin Yum - Porfolio</title>
   <link href="_css/foundation.css" rel="stylesheet">
   <link href="_css/portfolio.css" type="text/css" rel="stylesheet">
+  <link href="_css/portfolio.scss" rel="stylesheet">
 </head>
 
 <body>
@@ -31,8 +32,8 @@
   </div>
 
   <div class="about" id="aboutID">
-    <div class="row full-width" data-equalizer data-equalize-on="medium">
-      <div class="large-6 medium-6 columns" id="aboutCol1" data-equalizer-watch>
+    <div class="row full-width">
+      <div class="large-6 medium-6 columns" id="aboutCol1">
         <div class="callout">
           <h1>About</h1>
           <h4><a href="#projectID">Project</a> / <a href="#contactID">Contact</a></h4>
@@ -42,7 +43,7 @@
           <h4><a href="#projectID">Project</a> / <a href="#contactID">Contact</a></h4>
         </div>
       </div>
-      <div class="large-6 medium-6 columns" id="aboutCol2" data-equalizer-watch>
+      <div class="large-6 medium-6 columns" id="aboutCol2">
         <h2>About Me</h2>
         <p id="aboutIntro">I am a web designer and front-end developer. I started my journey with coding by learning Java in 2014 and taking a few classes on C++. Since then I have been brushing up on my skills and found my way into web development in the beginning of 2017. My passion is in coding and hope to find innovative ways to make websites more fun and efficient. I am looking to learn and obtain new skills by working in an enviroment where I can develop or maintain websites. In turn, I will give my all to better the company and always be willing to adapt to the situation given by my employer.</p>
         <h2>How I Work</h2>
@@ -58,7 +59,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="projects" id="projectID">
     <div class="row full-width">
@@ -79,13 +79,14 @@
           <div class= gotwoodPJ>
             <div class="gotwoodBG">
 
-              <a href="#about"><button type="button" class="open-overlay">See More</button></a>
+              <span onclick="openGW()"><button type="button" class="open-overlay">See More</button></span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <div class="contact" id="contactID">
     <div class="row full-width">
@@ -107,12 +108,18 @@
     </div>
   </div>
 
-  <!--<section class="overlay" aria-hidden="true">
+  <div id="myGW" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeGW()" onclick="showH()">&times;</a>
     <div class="row full-width">
-      <h2>Got Wood Floors</h2>
-      <button type="button" class="close-overlay">CLOSE LAYER</button>
+      <div class="large-2 medium-2 columns">
+          <h6>Projects</h6>
+      </div>
+      <div class="large-10 medium-10 columns">
+          <h2>Got Wood Floors</h2>
+          <p><a href="index.html#main">Go back home</a></p>
+      </div>
     </div>
-  </section>-->
+  </div>
 
 
 
@@ -120,6 +127,8 @@
   <script src="_js/foundation.min.js"></script>
   <script src="_js/fixed_scoll.js"></script>
   <script src='_js/smooth_scroll.js'></script>
+  <script src='_js/page_transition.js'></script>
+  <script src="_js/jquery.smoothState.js"></script>
 </body>
 
 </html>
