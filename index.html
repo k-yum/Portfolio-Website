@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kevin Yum - Porfolio</title>
+
   <link href="_css/foundation.css" rel="stylesheet">
   <link href="_css/portfolio.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 
+
+  
   <div class="intro">
     <div class="container">
       <div class="nav">
@@ -59,6 +62,7 @@
     </div>
   </div>
 
+
   <div class="projects" id="projectID">
     <div class="row full-width">
       <div class="large-6 medium-6 columns" id="projectCol1">
@@ -74,9 +78,12 @@
       <div class="large-6 medium-6 columns" id="projectCol2">
         <div class="row full-width">
           <h2 id="gotwoodH">Got Wood Floors</h2>
-          <h5>See More</h5>
+
           <div class= gotwoodPJ>
-            <div class="gotwoodBG"></div>
+            <div class="gotwoodBG">
+
+              <a href="#about"><button type="button" class="open-overlay">See More</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -103,12 +110,20 @@
     </div>
   </div>
 
+  <!--<section class="overlay" aria-hidden="true">
+    <div class="row full-width">
+      <h2>Got Wood Floors</h2>
+      <button type="button" class="close-overlay">CLOSE LAYER</button>
+    </div>
+  </section>-->
+
 
 
   <script src='_js/jquery-3.2.1.js'></script>
   <script src="_js/foundation.min.js"></script>
-  <script src="_js/scoll.js"></script>
-  <script src='_js/transition.js'></script>
+  <script src="_js/fixed_scoll.js"></script>
+  <script src='_js/smooth_scroll.js'></script>
+
 </body>
 
 </html>

@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "custom4";
-  src: url("../_fonts/calendar note tfb.ttf") format("truetype");
+  src: url("../_fonts/code bold.otf") format("truetype");
 }
 
 @font-face {
@@ -58,13 +58,13 @@ h2 {
   font-family: custom;
   color: #AD353A;
   position: relative;
-  top: 120px;
+  top: 130px;
   text-shadow: 1px 1px black;
 }
 
 .resume {
   width: 200px;
-  background-color: dodgerblue;
+  background-color: ;
   font-family: custom2;
   font-size: 20px;
   color: black;
@@ -176,16 +176,16 @@ li {
   text-align: center;
   background-color: ;
   vertical-align: middle;
-  font-family: custom2;
+  font-family: custom6;
   color: #AD353A;
   font-size: 1.6em;
-  border: solid 2px ;
+  border: solid 2px black;
   border-radius: 20px;
   transition-duration: 2s;
 }
 
 li a {
-  color: white;
+  color: black;
   text-shadow: 1px 1px black;
 }
 
@@ -346,23 +346,27 @@ p a {
 /* Project Content */
 
 #gotwoodH {
-  width: 100%;
+  width: 104%;
   text-align: center;
   margin: auto;
   position: relative;
   top : 150px;
   color: black;
   font-family: custom4;
-  font-size: 2.8em;
+  font-size: 2.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: ;
   z-index: 2;
 }
 
-.projects h5 {
+.projects button {
   width: 120px;
+  padding: 4px;
   text-align: center;
   /*margin: auto;*/
   position: relative;
-  top : 300px;
+  top : 330px;
   left: 320px;
   color: black;
   font-family: custom3;
@@ -375,7 +379,7 @@ p a {
   transition-duration: 1s;
 }
 
-.projects h5:hover {
+.projects button:hover {
   background-color: bisque;
   transition-duration: 1s;
 }
@@ -388,7 +392,7 @@ p a {
   border: 1px 1px white;
   /*margin-left: -15px;
   margin-right: -15px;*/
-  margin-top: -110px;
+  margin-top: -50px;
   z-index: 1;
   overflow: hidden;
 }
@@ -469,5 +473,38 @@ p a {
 .projects h4 a:hover {
   border-bottom: solid 2px black;
 }
+
+/*project see more animation */
+
+/*.noscroll { overflow: hidden; }
+
+.overlay { 
+   position: fixed; 
+   overflow-y: scroll;
+   top: 0; right: 0; bottom: 0; left: 0; }
+
+[aria-hidden="true"] { display: none; }
+[aria-hidden="false"] { display: block; }
+
+.overlay div {
+   margin: 0px;
+   width: 100%;
+   max-width: 100%;
+   padding: 0px;
+   min-height: 200vh;
+   background: rgba(255,255,255, .95);
+}
+.overlay {
+    background:  rgba(40,40,40, .75);
+}*/
+
+
+
+
+
+
+
+
+
 
 
