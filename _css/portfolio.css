@@ -38,14 +38,14 @@
   src: url("../_fonts/CaviarDreams_Bold.ttf") format("truetype");
 }
 
-
 h1 {
   font-family: "funsized", sans-serif;
   font-size: 4.7em
 }
 
-.about h1, .contact h1 {
-  color: white;
+.about h1,
+.contact h1 {
+  color: black;
 }
 
 h2 {
@@ -81,37 +81,34 @@ h2 {
 }
 
 .resume a:hover {
-  color: yellow; 
+  color: yellow;
 }
 
 .resume:hover {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
-}
-
-.about a {
-  font-family: "custom2";
-  color: black;
 }
 
 .projects a {
@@ -132,7 +129,6 @@ h2 {
   background-size: cover;*/
   height: 750px;
   z-index: 2;
-  opacity: 0.
 }
 
 .intro::before {
@@ -165,7 +161,6 @@ ul {
   display: table;
   border-spacing: 40px 0px;
   margin: auto;
-
 }
 
 li {
@@ -204,6 +199,7 @@ p a {
   text-shadow: 1px 1px black;
 }
 
+
 /*make li blocks same width and height as the table cells & make it vertical
 @media screen and (max-width: 1000px) {
   .container {
@@ -233,27 +229,23 @@ p a {
   }
 }*/
 
-/* Subject Containers */
 
-#aboutCol1 {
-  background-color: #AD353A;
-  height: 1600px;
-}
+/* Subject Titles */
 
-.callout {
-  /*background-color: #AD353A;*/
-  /*#FBD10F*/
-  background-color: #AD353A;
-  border-color: #AD353A;
-  text-align: center;
-  margin-top: 300px;
-}
-
-/* make media query to change margin-top or make display: 'hidden' */
-.aboutSbottom {
+.title {
+  width: 100%;
   background-color: #AD353A;
   text-align: center;
-  margin-top: 700px;
+  padding: 10px 0px;
+}
+
+.about-header h1 {
+  color: black;
+}
+
+.about-header a {
+  font-family: "custom2";
+  color: black;
 }
 
 #aboutCol2 {
@@ -282,11 +274,9 @@ p a {
 
 #contactCol1 {
   background-color: #AD353A;
-  height: 100vh;
 }
 
 .contactScroll {
-  margin-top: 300px;
   text-align: center;
 }
 
@@ -295,26 +285,69 @@ p a {
   height: 100vh;
 }
 
+
+/* link underline animation */
+
+.about h4,
+.contact h4,
+.about h4 a,
+.contact h4 a {
+  color: black;
+}
+
+.projects h4,
+.projects h4 a {
+  color: black;
+}
+
+.about h4 a:hover,
+.contact h4 a:hover {
+  border-bottom: solid 2px white;
+}
+
+.projects h4 a:hover {
+  border-bottom: solid 2px black;
+}
+
+
 /* About Content */
+
+.about-text {
+  opacity: 1;
+}
+
+.about-img {
+  width: 100%;
+  background-image: url(../_images/space.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  z-index: 2;
+}
 
 #aboutIntro {
   width: 80%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 50px;
   text-align: left;
+  max-width: 600px;
 }
 
 .about h2 {
-  margin-top: 60px;
+  padding-top: 40px;
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
   font-family: custom6;
-  color: black;
+  color: navajowhite;
   font-size: 2.7em;
   font-weight: bold;
   word-spacing: 6px;
+}
+
+#hiwHeader {
+  padding-bottom: 30px;
 }
 
 .about img {
@@ -323,15 +356,11 @@ p a {
   margin: auto;
 }
 
-#aboutImg1 {
-  margin-top: 40px;
-}
-
 .about h3 {
   text-align: center;
   margin: 20px;
   font-family: custom3;
-  color: red;
+  color: yellow;
   font-weight: bold;
 }
 
@@ -340,17 +369,18 @@ p a {
   margin: auto;
   text-align: center;
   margin-bottom: 60px;
-  color: dimgray;
+  color: white
 }
+
 
 /* Project Content */
 
 #gotwoodH {
-  width: 104%;
+  width: 100%;
   text-align: center;
   margin: auto;
   position: relative;
-  top : 150px;
+  top: 150px;
   color: black;
   font-family: custom4;
   font-size: 2.3em;
@@ -363,7 +393,6 @@ p a {
 .projects p {
   width: 50%;
   position: relative;
-  
 }
 
 .projects button {
@@ -372,7 +401,7 @@ p a {
   text-align: center;
   /*margin: auto;*/
   position: absolute;
-  top : 330px;
+  top: 330px;
   left: 320px;
   color: black;
   font-family: custom3;
@@ -394,12 +423,11 @@ p a {
 .gotwoodPJ {
   margin-right: 0px;
   padding: 0px;
-  width: 104%;
+  width: 100%;
   height: 750px;
   border: 1px 1px white;
   /*margin-left: -15px;
   margin-right: -15px;*/
-  margin-top: -169px;
   z-index: 1;
   overflow: hidden;
 }
@@ -408,6 +436,7 @@ p a {
   width: 100%;
   height: 100%;
   background-image: url(../_images/kitchen-2400367_1920.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -419,24 +448,35 @@ p a {
 
 .gotwoodBG:hover {
   opacity: 0.85;
-  -webkit-transform: scale(1.2);
+  -webkit-transform: scale(1.3);
   -webkit-transition-delay: .2s;
   -webkit-transition-duration: 5s;
   -moz-transform: scale(1.2);
   -moz-transition-delay: .2s;
   -moz-transition-duration: 5s;
-  width:100%;
+  width: 100%;
   z-index: -2;
 }
 
+
 /* Contact content */
-  
+
+.contact-img {
+  width: 100%;
+  background-image: url(../_images/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+  z-index: 2;
+}
+
 .contact h2 {
   font-family: custom6;
   font-weight: bold;
   text-align: center;
   margin: 30px;
-  color: black;
+  color: aqua;
 }
 
 .contact p {
@@ -444,14 +484,17 @@ p a {
   font-weight: bold;
   font-size: 25px;
   text-align: center;
+  color: aqua;
+  margin-bottom: 100px
 }
 
 .contact h3 {
+  text-align: center;
   margin-top: 30px;
   margin-left: 10px;
   font-size: 25px;
   font-family: custom5;
-  color: dimgray;
+  color: white;
 }
 
 #phone {
@@ -460,28 +503,17 @@ p a {
 
 .contact img {
   width: 70px;
-  margin: 30px 10px;
+  margin: 20px;
 }
 
-/* link underline animation */
-
-.about h4, .contact h4, .about h4 a, .contact h4 a {
-  color: white;
+.icons {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.projects h4, .projects h4 a {
-  color: black;
-}
-
-.about h4 a:hover, .contact h4 a:hover {
-  border-bottom: solid 2px white;
-}
-
-.projects h4 a:hover {
-  border-bottom: solid 2px black;
-}
 
 /*project see more animation */
+
 
 /*.noscroll { overflow: hidden; }
 
@@ -506,30 +538,20 @@ p a {
 }*/
 
 .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(225,225,225, 1);
-    overflow-y: scroll;
-    transition: 0.5s ease-out;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(225, 225, 225, 1);
+  overflow-y: scroll;
+  transition: 0.5s ease-out;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
-
-
-
-
-
-
-
-
-
-
