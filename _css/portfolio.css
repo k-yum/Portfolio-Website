@@ -67,8 +67,7 @@ h2 {
   background-color: ;
   font-family: custom2;
   font-size: 20px;
-  color: black;
-  border: solid 2px white;
+  border: solid 3px yellow;
   text-align: center;
   margin: auto;
   position: relative;
@@ -78,11 +77,11 @@ h2 {
 }
 
 .resume a {
-  color: white;
+  color: yellow;
 }
 
 .resume a:hover {
-  color: white; 
+  color: yellow; 
 }
 
 .resume:hover {
@@ -150,6 +149,7 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
   height: 750px;
+  filter: brightness(80%);
 }
 
 .container {
@@ -179,13 +179,13 @@ li {
   font-family: custom6;
   color: #AD353A;
   font-size: 1.6em;
-  border: solid 2px black;
+  border: solid 2px white;
   border-radius: 20px;
   transition-duration: 2s;
 }
 
 li a {
-  color: black;
+  color: white;
   text-shadow: 1px 1px black;
 }
 
@@ -360,12 +360,18 @@ p a {
   z-index: 1;
 }
 
+.projects p {
+  width: 50%;
+  position: relative;
+  
+}
+
 .projects button {
   width: 120px;
   padding: 4px;
   text-align: center;
   /*margin: auto;*/
-  position: relative;
+  position: absolute;
   top : 330px;
   left: 320px;
   color: black;
@@ -376,6 +382,7 @@ p a {
   border-radius: 20px;
   z-index: 2;
   background-color: indianred;
+  transform: scale(1);
   transition-duration: 1s;
 }
 
@@ -392,7 +399,7 @@ p a {
   border: 1px 1px white;
   /*margin-left: -15px;
   margin-right: -15px;*/
-  margin-top: -50px;
+  margin-top: -169px;
   z-index: 1;
   overflow: hidden;
 }
