@@ -38,14 +38,9 @@
   src: url("../_fonts/CaviarDreams_Bold.ttf") format("truetype");
 }
 
-h1 {
-  font-family: "funsized", sans-serif;
-  font-size: 4.7em
-}
-
-.about h1,
-.contact h1 {
-  color: black;
+@font-face {
+  font-family: "custom7";
+  src: url("../_fonts/coolvetica rg.ttf") format("truetype");
 }
 
 h2 {
@@ -55,7 +50,8 @@ h2 {
 }
 
 .introName h1 {
-  font-family: custom;
+  font-family: custom, sans-serif;
+  font-size: 4.7em;
   color: #AD353A;
   position: relative;
   top: 130px;
@@ -69,9 +65,9 @@ h2 {
   font-size: 20px;
   border: solid 3px yellow;
   text-align: center;
-  margin: auto;
   position: relative;
-  top: 230px;
+  top: -360px;
+  left: 1000px;
   padding-top: 15px;
   border-radius: 30px;
 }
@@ -89,36 +85,6 @@ h2 {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-}
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
-.projects a {
-  font-family: "custom2";
-  color: black;
-}
-
-.contact a {
-  font-family: "custom2";
-  color: black;
 }
 
 .intro {
@@ -199,6 +165,16 @@ p a {
   text-shadow: 1px 1px black;
 }
 
+.projects a {
+  font-family: "custom2";
+  color: black;
+}
+
+.contact a {
+  font-family: "custom2";
+  color: black;
+}
+
 
 /*make li blocks same width and height as the table cells & make it vertical
 @media screen and (max-width: 1000px) {
@@ -232,15 +208,21 @@ p a {
 
 /* Subject Titles */
 
+.subjects h1 {
+  font-family: custom7;
+  color: white;
+}
+
 .title {
-  width: 100%;
-  background-color: #AD353A;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+  background-image: url(../_images/abstract.jpg);
   text-align: center;
   padding: 10px 0px;
 }
 
-.about-header h1 {
-  color: black;
+.title h1 {
+  text-align: center;
 }
 
 .about-header a {
@@ -274,15 +256,6 @@ p a {
 
 #contactCol1 {
   background-color: #AD353A;
-}
-
-.contactScroll {
-  text-align: center;
-}
-
-#contactCol2 {
-  background-color: antiquewhite;
-  height: 100vh;
 }
 
 
@@ -380,7 +353,7 @@ p a {
   text-align: center;
   margin: auto;
   position: relative;
-  top: 150px;
+  top: 100px;
   color: black;
   font-family: custom4;
   font-size: 2.3em;
@@ -390,19 +363,24 @@ p a {
   z-index: 1;
 }
 
-.projects p {
-  width: 50%;
+.gwProject-content p {
+  width: 30%;
   position: relative;
+  top:200px;
+  margin: auto;
 }
 
-.projects button {
+.gwProject-content .button-container {
+  width: 100%;
+  position: relative;
+  top: 300px;
+  text-align: center;
+}
+
+.gwProject-content button {
   width: 120px;
   padding: 4px;
   text-align: center;
-  /*margin: auto;*/
-  position: absolute;
-  top: 330px;
-  left: 320px;
   color: black;
   font-family: custom3;
   font-size: 1.6em;
@@ -415,12 +393,12 @@ p a {
   transition-duration: 1s;
 }
 
-.projects button:hover {
+.gwProject-content button:hover {
   background-color: bisque;
   transition-duration: 1s;
 }
 
-.gotwoodPJ {
+.gwProject-content {
   margin-right: 0px;
   padding: 0px;
   width: 100%;
@@ -432,7 +410,7 @@ p a {
   overflow: hidden;
 }
 
-.gotwoodBG {
+.gwProject-BG {
   width: 100%;
   height: 100%;
   background-image: url(../_images/kitchen-2400367_1920.jpg);
@@ -441,13 +419,14 @@ p a {
   background-repeat: no-repeat;
   background-position: center;
   animation-direction: reverse;
-  -webkit-transform: scale(1);
+  animation: zoom-normal 10s infinite;
+  /*-webkit-transform: scale(1);
   -webkit-transition-delay: .2s;
-  -webkit-transition-duration: 5s;
+  -webkit-transition-duration: 5s;*/
 }
 
-.gotwoodBG:hover {
-  opacity: 0.85;
+.gwProject-BG:hover {
+  /*opacity: 0.85;
   -webkit-transform: scale(1.3);
   -webkit-transition-delay: .2s;
   -webkit-transition-duration: 5s;
@@ -455,7 +434,9 @@ p a {
   -moz-transition-delay: .2s;
   -moz-transition-duration: 5s;
   width: 100%;
-  z-index: -2;
+  z-index: -2;*/
+  animation: zoom 5s;
+  animation-fill-mode: forwards;
 }
 
 
@@ -554,4 +535,50 @@ p a {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+
+/* Keyframes */
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+
+@keyframes zoom-normal{
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
