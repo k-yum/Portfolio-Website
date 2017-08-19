@@ -120,7 +120,8 @@ h2 {
   margin: auto;
 }
 
-ul {
+
+/*ul {
   width: 1000px;
   position: relative;
   top: 180px;
@@ -158,7 +159,157 @@ li:hover {
   background-color: #AD353A;
   color: white;
   transition-duration: 2s;
+}*/
+
+
+/* Responsive Nav */
+
+nav {
+  height: 70px;
+  width: 100%;
+  font-size: 11pt;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  position: fixed;
+  background-color: (0,0,0, 0.5);
+  z-index: 1;
 }
+
+.nav-up {
+  top: -40px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+}
+
+nav li {
+  display: inline-block;
+  float:inherit;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+nav a {
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+nav li a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+nav a#pull {
+  display: none;
+}
+
+.nav2 {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    display: block;
+  }
+  nav {
+    height: auto;
+    position: static;
+  }
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+    z-index: 1;
+  }
+  nav li {
+    width: 100%;
+    float: right;
+    position: relative;
+    background-color: #283744;
+    z-index: 1;
+  }
+  nav li a {
+    border-bottom: 1px solid #576979;
+    border-top: 1px solid #576979;
+  }
+  nav a {
+    text-align: center;
+    width: 100%;
+  }
+  nav h2 {
+    left: 25%;
+  }
+  .clearfix {
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+  .lastMenu {
+    width: 100%;
+    background-color: #283744;
+  }
+  nav a#pull {
+    display: block;
+    background-color: #283744;
+    width: 50px;
+    position: relative;
+  }
+  nav a#pull:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  nav img {
+    width: 30px;
+    height: 30px;
+  }
+  nav a#pull:hover {
+    background-color: red;
+  }
+}
+
+
+/*a tags */
 
 p a {
   color: white;
@@ -293,13 +444,12 @@ p a {
 #aboutme-img {
   background-image: url(../_images/office.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   height: 400px;
 }
 
 #aboutme-p p {
   color: dimgray;
-    
 }
 
 .afterAboutMe {
@@ -312,9 +462,9 @@ p a {
   display: block;
   position: relative;
   top: -40px;
-  right:14px;
+  right: 14px;
   width: 80px;
-  background-color: #4e69a2 ;
+  background-color: #4e69a2;
   border-radius: 50%;
 }
 
@@ -399,7 +549,7 @@ p a {
 .gwProject-content p {
   width: 30%;
   position: relative;
-  top:200px;
+  top: 200px;
   margin: auto;
 }
 
@@ -597,14 +747,13 @@ p a {
   0% {
     background-size: 100%;
   }
-  50% {
-  }
+  50% {}
   100% {
     background-size: 120%;
   }
 }
 
-@keyframes zoom-normal{
+@keyframes zoom-normal {
   0% {
     background-size: 100%;
   }
@@ -614,4 +763,21 @@ p a {
   100% {
     background-size: 100%;
   }
+}
+
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
 }
