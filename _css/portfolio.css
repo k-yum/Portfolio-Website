@@ -66,7 +66,7 @@ h2 {
   border: solid 3px yellow;
   text-align: center;
   position: relative;
-  top: -360px;
+  top: 0;
   left: 1000px;
   padding-top: 15px;
   border-radius: 30px;
@@ -210,13 +210,10 @@ p a {
 
 .subjects h1 {
   font-family: custom7;
-  color: white;
+  color: black;
 }
 
 .title {
-  border-top: solid 3px white;
-  border-bottom: solid 3px white;
-  background-image: url(../_images/abstract.jpg);
   text-align: center;
   padding: 10px 0px;
 }
@@ -285,11 +282,43 @@ p a {
 
 /* About Content */
 
-.about-text {
-  opacity: 1;
+.about {
+  margin: px;
 }
 
-.about-img {
+.about-header {
+  background-color: antiquewhite;
+}
+
+#aboutme-img {
+  background-image: url(../_images/office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 400px;
+}
+
+#aboutme-p p {
+  color: dimgray;
+    
+}
+
+.afterAboutMe {
+  height: 160px;
+  background-color: #3b5998;
+  background-blend-mode: color;
+}
+
+#fb_icon {
+  display: block;
+  position: relative;
+  top: -40px;
+  right:14px;
+  width: 80px;
+  background-color: #4e69a2 ;
+  border-radius: 50%;
+}
+
+.skills {
   width: 100%;
   background-image: url(../_images/space.png);
   background-repeat: no-repeat;
@@ -317,6 +346,10 @@ p a {
   font-size: 2.7em;
   font-weight: bold;
   word-spacing: 6px;
+}
+
+#aboutme-p h2 {
+  color: black;
 }
 
 #hiwHeader {
