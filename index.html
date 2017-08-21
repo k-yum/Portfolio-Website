@@ -12,6 +12,28 @@
 </head>
 
 <body>
+  
+  <div id="top">
+    </div>
+
+  <nav class="nav-down">
+    <div class="lastMenu">
+      <a id="pull"><img src="_images/nav-icon.png"></a>
+    </div>
+    
+    <div class="nav">
+      <ul class="clearfix">
+        <li id="l1"><a href="#aboutID">ABOUT</a></li>
+        <li><a href="#projectID">PROJECT</a></li>
+        <li id="l3"><a href="#contactID">CONTACT</a></li>
+      </ul>
+      <div class="logo">
+        <a href="#top" id="logo"><p></p></a>
+    </div>
+    </div>
+  </nav>
+  
+  
 
   <div class="intro">
     <div class="container">
@@ -19,11 +41,7 @@
         <div class="introName">
           <h1>Looking for a <br />Web Developer?<br />View my portfolio</h1>
         </div>
-        <ul>
-          <li id="l1"><a href="#aboutID">ABOUT</a></li>
-          <li><a href="#projectID">PROJECT</a></li>
-          <li id="l3"><a href="#contactID">CONTACT</a></li>
-        </ul>
+
         <div class="resume">
           <p><a href="_download/Kevin%20Yum%20-%20Resume.docx" download target="_blank">Download Resume</a></p>
         </div>
@@ -53,27 +71,28 @@
             </div>
             <div class="afterAboutMe">
               <img src="_images/fb_icon2.png" id="fb_icon">
-              <p>View my <bold>facebook profile</bold> for more info about me</p>
+              <p>View my
+                <bold>facebook profile</bold> for more info about me</p>
             </div>
             <div class="skills">
-            <h2 id="hiwHeader">How I Work</h2>
-            <div class="row full-width">
-              <div class="medium-4 large-4 columns">
-                <img src="_images/idea_icon.png">
-                <h3>Ideas</h3>
-                <p>I collaborate with my clients to help our ideas grow into an ideal and well-thought out design. My goal is to make sure the client is more than satisfied and proud to own thier website.</p>
+              <h2 id="hiwHeader">How I Work</h2>
+              <div class="row full-width">
+                <div class="medium-4 large-4 columns">
+                  <img src="_images/idea_icon.png">
+                  <h3>Ideas</h3>
+                  <p>I collaborate with my clients to help our ideas grow into an ideal and well-thought out design. My goal is to make sure the client is more than satisfied and proud to own thier website.</p>
+                </div>
+                <div class="medium-4 large-4 columns">
+                  <img src="_images/development_icon.png">
+                  <h3>Development</h3>
+                  <p>I sketch the structure of the website, focusing on responsive web design, intuitive UI, and creative interactions fit for the client's needs. I hope to create memorable interactions with the users to help your site grow.</p>
+                </div>
+                <div class="medium-4 large-4 columns">
+                  <img src="_images/code_icon.png">
+                  <h3>Code</h3>
+                  <p>I design in the browser with HTML, CSS, and JavaScript. I also work with front-end frameworks like foundation. I like to code from scratch but I can also develop with WordPress.</p>
+                </div>
               </div>
-              <div class="medium-4 large-4 columns">
-                <img src="_images/development_icon.png">
-                <h3>Development</h3>
-                <p>I sketch the structure of the website, focusing on responsive web design, intuitive UI, and creative interactions fit for the client's needs. I hope to create memorable interactions with the users to help your site grow.</p>
-              </div>
-              <div class="medium-4 large-4 columns">
-                <img src="_images/code_icon.png">
-                <h3>Code</h3>
-                <p>I design in the browser with HTML, CSS, and JavaScript. I also work with front-end frameworks like foundation. I like to code from scratch but I can also develop with WordPress.</p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -88,14 +107,21 @@
         </div>
       </div>
       <div class="row full-width">
-        <div class="gwProject-content">
-          <div class="gwProject-BG">
-            <h2 id="gotwoodH">Got Wood Floors</h2>
+        <div class="medium-5 large-5 columns">
+          <div class="gotwood-content">
+          <h2 id="gotwoodH">Got Wood Floors</h2>
             <p>Got Wood Floors is a new wood flooring company dedicated to using only real wood for all its services. The website was made using HTML,CSS,JavaScript, and Foundation.</p>
             <div class="button-container">
               <a href="http://www.gotwoodsocal.com/" target="_blank"><span onclick="openGW()"><button type="button" class="open-overlay">Visit Site</button></span></a>
             </div>
           </div>
+        </div>
+        <div class="medium-7 large-7 columns">
+        <div class="gwProject-content">
+          <div class="gwProject-BG">
+            
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -151,6 +177,7 @@
   <!--<script src='_js/page_transition.js'></script>-->
   <script src="_js/jquery.smoothState.js"></script>
   <script src="_js/auto-height.js"></script>
+  <script src="_js/nav-menu.js"></script>
 </body>
 
 </html>
