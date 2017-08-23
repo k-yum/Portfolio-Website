@@ -64,7 +64,7 @@ h2 {
   background-color: ;
   font-family: custom2;
   font-size: 20px;
-  border: solid 3px yellow;
+  border: solid 3px white;
   text-align: center;
   position: relative;
   top: 200px;
@@ -74,10 +74,6 @@ h2 {
 }
 
 .resume a {
-  color: yellow;
-}
-
-.resume a:hover {
   color: yellow;
 }
 
@@ -162,7 +158,7 @@ li {
 }*/
 
 .nav-up {
-  top: -170px;
+  top: -220px;
 }
 
 nav {
@@ -310,12 +306,7 @@ li:hover {
   background-color: #AD353A;
   color: white;
   transition-duration: 2s;
-}*/
-
-
-/* Responsive Nav */
-
-
+}
 
 
 /*a tags */
@@ -433,37 +424,49 @@ p a {
 /* About Content */
 
 .about {
-  background-color: darkgray;
+  background-color: white;
 }
 
 .about-header {
-  /*background-image: url(../_images/space.png);
+  background-image: url(../_images/space.png);
   background-size: cover;
   background-attachment: fixed;
+  background-position: right top;
+  padding-top: 50px;
 }
 
 .about-header h1 {
-  color: red*/
+  color: white;
 }
 
 .aboutme {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 100px;
-  /*background-image: url(../_images/space.png);
+  background-image: url(../_images/space.png);
   background-size: cover;
+  background-position: right top;
   background-attachment: fixed;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
 }
 #aboutme-p p {
-  color: black;
+  color: white;
   width: 100%; 
 }
 
 .afterAboutMe {
-  height: 170px;
+  height: 120px;
   background-color: #3b5998;
   background-blend-mode: color;
+}
+
+.afterAboutMe p {
+  position: relative;
+  top: -30px;
+  font-family: custom5;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
 }
 
 #fb_icon {
@@ -477,14 +480,20 @@ p a {
 }
 
 .skills {
-  padding: 100px;
+  padding: 50px;
   width: 100%;
-  background-image: url(../_images/space.png);
+  /*background-image: url(../_images/space.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   height: auto;
   z-index: 2;
+  background-color: #FFCC3B;
+}
+
+.skill-header h1{
+  margin-bottom: 50px;
+  font-family: custom4;
 }
 
 #aboutIntro {
@@ -525,7 +534,7 @@ p a {
   text-align: center;
   margin: 20px;
   font-family: custom3;
-  color: yellow;
+  color: ;
   font-weight: bold;
 }
 
@@ -534,29 +543,32 @@ p a {
   margin: auto;
   text-align: center;
   margin-bottom: 60px;
-  color: white
+  color: black;
 }
 
 
 /* Project Content */
 
 .projects { 
-  background-color: darkgray;
-  padding: 100px;
+  background-color: white;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.project-header h1 {
+  margin-bottom: 50px;
 }
 
 .gotwood-content {
-  
+  margin-top: 80px;
 }
 
 #gotwoodH {
   width: 100%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: black;
   font-family: custom4;
-  font-size: 2.3em;
+  font-size: 2.2em;
   font-weight: bold;
   letter-spacing: 1px;
   font-weight: ;
@@ -564,13 +576,11 @@ p a {
 }
 
 .gotwood-content p {
-  width: 70%;
-  margin: auto;
+
 }
 
 .gotwood-content .button-container {
   width: 100%;
-  text-align: center;
   margin-top: 50px;
 }
 
@@ -636,16 +646,52 @@ p a {
   animation-fill-mode: forwards;
 }
 
+.testimonial {
+  margin-top: 40px;
+}
+
+.testimonial p{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: custom3;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+}
+
+.tml-person {
+  width: 30%;
+  margin: auto;
+}
+
+.tml-person img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float:left;
+}
+
+.tml-person h2 {
+  text-align: inherit;
+  position: relative;
+  top: 40px;
+  left: 30px;
+  font-size: 1.1em;
+  color: dimgray;
+  font-weight: bold;
+}
 
 /* Contact content */
 
 .contact-img {
   width: 100%;
-  background-image: url(../_images/space.png);
+  /*background-image: url(../_images/keyboard.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 750px;
+  background-size: cover;*/
+  background-color: #FFCC3B;
+  height: 620px;
   z-index: 2;
 }
 
@@ -654,7 +700,7 @@ p a {
   font-weight: bold;
   text-align: center;
   margin: 30px;
-  color: aqua;
+  color: darkslategray;
 }
 
 .contact p {
@@ -662,7 +708,7 @@ p a {
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-  color: aqua;
+  color: darkslategray;
   margin-bottom: 100px
 }
 
@@ -672,7 +718,7 @@ p a {
   margin-left: 10px;
   font-size: 25px;
   font-family: custom5;
-  color: white;
+  color: firebrick;
 }
 
 #phone {
