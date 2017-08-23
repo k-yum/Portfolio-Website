@@ -167,7 +167,6 @@ nav {
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
-  background-color: #283744;
   z-index: 1;
 }
 
@@ -180,7 +179,8 @@ nav ul {
 
 nav li {
   display: inline;
-  float: right;
+  float: left;
+  height: 50px;
 }
 
 .clearfix:before,
@@ -222,26 +222,28 @@ nav a#pull {
 }
 
 @media screen and (max-width: 1300px) {
+  nav {
+    width: 30%;
+  }
   nav ul {
-    width: 100%;
+    width: 30%;
     display: block;
     height: auto;
     z-index: 1;
   }
   nav li {
     width: 100%;
-    float: right;
+    float: left;
     position: relative;
-    background-color: #283744;
+
     z-index: 1;
   }
   nav li a {
-    border-bottom: 1px solid #576979;
-    border-top: 1px solid #576979;
+    float: left;
   }
   nav a {
-    text-align: center;
-    width: 100%;
+    float: left;
+
   }
   nav h2 {
     left: 25%;
@@ -268,10 +270,10 @@ nav a#pull {
   }
   nav a#pull {
     display: block;
-    background-color: #283744;
+
     width: 50px;
     position: relative;
-    float: right;
+    float: left;
   }
   nav a#pull:after {
     content: "";
@@ -493,7 +495,7 @@ p a {
 
 .skill-header h1{
   margin-bottom: 50px;
-  font-family: custom4;
+  color: darkslategray;
 }
 
 #aboutIntro {
@@ -534,7 +536,7 @@ p a {
   text-align: center;
   margin: 20px;
   font-family: custom3;
-  color: ;
+  color: darkslategray;
   font-weight: bold;
 }
 
@@ -544,6 +546,11 @@ p a {
   text-align: center;
   margin-bottom: 60px;
   color: black;
+}
+
+.skills p {
+  width: 80%;
+  color: lightslategray;
 }
 
 
@@ -576,7 +583,7 @@ p a {
 }
 
 .gotwood-content p {
-
+  color: lightslategray;
 }
 
 .gotwood-content .button-container {
@@ -664,6 +671,7 @@ p a {
 .tml-person {
   width: 30%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .tml-person img{
@@ -679,7 +687,7 @@ p a {
   top: 40px;
   left: 30px;
   font-size: 1.1em;
-  color: dimgray;
+  color: lightslategray;
   font-weight: bold;
 }
 
