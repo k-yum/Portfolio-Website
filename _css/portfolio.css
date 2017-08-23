@@ -55,20 +55,17 @@ h2 {
   font-size: 4.7em;
   color: yellow;
   position: relative;
-  top: 180px;
+  top: 100px;
   text-shadow: 1px 1px black;
 }
 
 .resume {
   width: 200px;
-  background-color: ;
   font-family: custom2;
   font-size: 20px;
   border: solid 3px white;
   text-align: center;
-  position: relative;
-  top: 200px;
-  left: 40%;
+  margin: auto;
   padding-top: 15px;
   border-radius: 30px;
 }
@@ -90,7 +87,7 @@ h2 {
   background-color: rgba(255 ,255 , 255, 0.5);
   background-repeat: no-repeat;
   background-size: cover;*/
-  height: 750px;
+  height: 400px;
   z-index: 2;
 }
 
@@ -107,7 +104,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 750px;
+  height: 400px;
 
 }
 
@@ -144,18 +141,46 @@ li {
   transition-duration: 2s;
 }*/
 
+li > a {
+  position: relative;
+  color: red;
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: red;
+}
+
+li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 /* responsive nav */
-/*#logo {
+#logo {
   width: 70px;
   height: 70px;
-  background-image: url(../_images/logo1.png);
-  background-size: cover;
+  background-image: url(../_images/ky-logo2.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 10px;
-  position: fixed;
-  left: 45%;
-  margin-top: 20px;
-}*/
+
+  float: right;
+}
 
 .nav-up {
   top: -220px;
@@ -165,7 +190,7 @@ nav {
   height: 50px;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 10px;
   transition: top 0.2s ease-in-out;
   z-index: 1;
 }
@@ -198,7 +223,7 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: lightslategray;
   display: inline-block;
   width: 150px;
   text-align: center;
@@ -215,6 +240,8 @@ nav li a {
 
 nav a#pull {
   display: none;
+  background-color: lightslategray;
+
 }
 
 .nav2 {
@@ -223,10 +250,10 @@ nav a#pull {
 
 @media screen and (max-width: 1300px) {
   nav {
-    width: 30%;
+    width: 100%;
   }
   nav ul {
-    width: 30%;
+    width: 100%;
     display: block;
     height: auto;
     z-index: 1;
@@ -295,7 +322,7 @@ nav a#pull {
 
 /**/
 
-li a {
+/*li a {
   color: white;
   text-shadow: 1px 1px black;
 }
@@ -308,15 +335,11 @@ li:hover {
   background-color: #AD353A;
   color: white;
   transition-duration: 2s;
-}
+}*/
 
 
 /*a tags */
 
-p a {
-  color: white;
-  text-shadow: 1px 1px black;
-}
 
 .projects a {
   font-family: "custom2";
@@ -375,11 +398,6 @@ p a {
   text-align: center;
 }
 
-.about-header a {
-  font-family: "custom2";
-  color: black;
-}
-
 #aboutCol2 {
   background-color: antiquewhite;
   height: 1600px;
@@ -434,11 +452,12 @@ p a {
   background-size: cover;
   background-attachment: fixed;
   background-position: right top;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .about-header h1 {
   color: white;
+  margin-bottom: 40px;
 }
 
 .aboutme {
@@ -449,8 +468,9 @@ p a {
   background-position: right top;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
+
 #aboutme-p p {
   color: white;
   width: 100%; 
@@ -469,6 +489,17 @@ p a {
   font-size: 20px;
   font-weight: bold;
   margin: auto;
+  width: 60%;
+  text-align: center;
+  word-spacing: 1px
+}
+
+.afterAboutMe a {
+  color: firebrick;
+}
+
+.afterAboutMe a:hover {
+  color: white;
 }
 
 #fb_icon {
@@ -495,6 +526,7 @@ p a {
 
 .skill-header h1{
   margin-bottom: 50px;
+  /*color: yellow;*/
   color: darkslategray;
 }
 
@@ -518,9 +550,6 @@ p a {
   word-spacing: 6px;
 }
 
-#aboutme-p h2 {
-  color: black;
-}
 
 #hiwHeader {
   padding-bottom: 30px;
@@ -536,21 +565,18 @@ p a {
   text-align: center;
   margin: 20px;
   font-family: custom3;
+  /*color: yellow;*/
   color: darkslategray;
   font-weight: bold;
 }
 
-.about p {
-  width: 60%;
+.skills p {
+  width: 80%;
+  /*color: white;*/
+  color: lightslategray;
   margin: auto;
   text-align: center;
   margin-bottom: 60px;
-  color: black;
-}
-
-.skills p {
-  width: 80%;
-  color: lightslategray;
 }
 
 
