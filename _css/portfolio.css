@@ -43,60 +43,42 @@
   src: url("../_fonts/coolvetica rg.ttf") format("truetype");
 }
 
-h2 {
-  font-family: "custom3";
-  color: red;
-  font-size: 2.6em;
+p {
+
 }
 
 .introName h1 {
   font-family: custom, sans-serif;
   text-align: center;
   font-size: 4.7em;
-  color: yellow;
-  position: relative;
-  top: 100px;
-  text-shadow: 1px 1px black;
+  color: white;
+  padding-top: 100px;
 }
 
 .resume {
   width: 200px;
   font-family: custom2;
   font-size: 20px;
-  border: solid 3px white;
+  border: solid 3px yellow;
   text-align: center;
   margin: auto;
   padding-top: 15px;
   border-radius: 30px;
+  transition-duration: 2s;
 }
 
 .resume a {
-  color: yellow;
+  color: white;
 }
 
 .resume:hover {
-  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  border-radius: 0px;
+  width: 230px;
+  transition-duration: 2s;
 }
 
 .intro {
   width: 100%;
-  /*background-image: url(../_images/space_bg.jpg);
-  background-color: rgba(255 ,255 , 255, 0.5);
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  height: 400px;
-  z-index: 2;
-}
-
-.intro::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background: url('../_images/space.png');
   background-position: right top;
   content: "";
@@ -105,7 +87,7 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
-
+  z-index: 2;
 }
 
 
@@ -161,6 +143,7 @@ li > a:before {
   background-color: red;
   visibility: hidden;
   -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
@@ -169,6 +152,7 @@ li > a:before {
 li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
+  -moz- transform: scaleX(1);
   transform: scaleX(1);
 }
 /* responsive nav */
@@ -178,8 +162,12 @@ li > a:hover:before {
   background-image: url(../_images/ky-logo2.png);
   background-size: contain;
   background-repeat: no-repeat;
-
   float: right;
+}
+
+#logo:hover {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+
 }
 
 .nav-up {
@@ -240,8 +228,6 @@ nav li a {
 
 nav a#pull {
   display: none;
-  background-color: lightslategray;
-
 }
 
 .nav2 {
@@ -262,7 +248,7 @@ nav a#pull {
     width: 100%;
     float: left;
     position: relative;
-
+    top: -15px;
     z-index: 1;
   }
   nav li a {
@@ -316,7 +302,7 @@ nav a#pull {
     height: 30px;
   }
   nav a#pull:hover {
-    background-color: red;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   }
 }
 
@@ -456,7 +442,7 @@ li:hover {
 }
 
 .about-header h1 {
-  color: white;
+  color: yellow;
   margin-bottom: 40px;
 }
 
@@ -491,15 +477,16 @@ li:hover {
   margin: auto;
   width: 60%;
   text-align: center;
-  word-spacing: 1px
+  word-spacing: 1px;
+  color: yellow;
 }
 
 .afterAboutMe a {
-  color: firebrick;
+  color: white;
 }
 
 .afterAboutMe a:hover {
-  color: white;
+  color: black;
 }
 
 #fb_icon {
@@ -573,7 +560,7 @@ li:hover {
 .skills p {
   width: 80%;
   /*color: white;*/
-  color: lightslategray;
+  color: black;
   margin: auto;
   text-align: center;
   margin-bottom: 60px;
@@ -596,7 +583,7 @@ li:hover {
   margin-top: 80px;
 }
 
-#gotwoodH {
+#gotwood-content h2 {
   width: 100%;
   margin-bottom: 30px;
   color: black;
@@ -630,10 +617,12 @@ li:hover {
   z-index: 2;
   background-color: indianred;
   transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
   transition-duration: 1s;
 }
 
-.gwProject-content button:hover {
+.gotwood-content button:hover {
   background-color: bisque;
   transition-duration: 1s;
 }
@@ -680,11 +669,11 @@ li:hover {
 }
 
 .testimonial {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .testimonial p{
-  width: 50%;
+  width: 660px;
   margin: auto;
   text-align: center;
   font-family: custom3;
@@ -712,6 +701,7 @@ li:hover {
   position: relative;
   top: 40px;
   left: 30px;
+  font-family: custom3;
   font-size: 1.1em;
   color: lightslategray;
   font-weight: bold;
@@ -729,11 +719,9 @@ li:hover {
   z-index: 2;
 }
 
-.contact h2 {
-  font-family: custom6;
-  font-weight: bold;
+.contact h1 {
   text-align: center;
-  margin: 30px;
+  margin: 50px;
   color: darkslategray;
 }
 
@@ -752,7 +740,7 @@ li:hover {
   margin-left: 10px;
   font-size: 25px;
   font-family: custom5;
-  color: firebrick;
+  color: black;
 }
 
 #phone {
@@ -821,19 +809,27 @@ li:hover {
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
+    -webkit-transform: translate3d(-1px, 0, 0);
+    -moz-transform: translate3d(-1px, 0, 0);
   }
   20%,
   80% {
     transform: translate3d(2px, 0, 0);
+    -webkit-transform: translate3d(2px, 0, 0);
+    -moz-transform: translate3d(2px, 0, 0);
   }
   30%,
   50%,
   70% {
     transform: translate3d(-4px, 0, 0);
+    -webkit-transform: translate3d(-4px, 0, 0);
+    -moz-transform: translate3d(-4px, 0, 0);
   }
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
+    -webkit-transform: translate3d(4px, 0, 0);
+    -moz-transform: translate3d(4px, 0, 0);
   }
 }
 
@@ -875,3 +871,134 @@ li:hover {
 .clearfix {
   *zoom: 1;
 }
+
+/* Media Queries */
+
+.gw2 {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .intro h1 {
+    font-size: 4.2em;
+    width: 720px;
+    margin: auto;
+  }
+  .gw1 {
+    display: none;
+  }
+  .gw2 {
+    display: block;
+  }
+  .gotwood-content {
+    text-align: center;
+  }
+  .gotwood-content p {
+    width: 360px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 947px) {
+  .tml-person h2 {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro h1 {
+    font-size: 3.2em;
+    padding-top: 150px;
+    width: 550px;
+  }
+  .tml-person {
+    width: 70%;
+  }
+  .tml-person h2 {
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .testimonial p {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .afterAboutMe {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 639.5px) {
+  .intro h1 {
+    font-size: 2.6em;
+    width: 450px;
+  }
+  #aboutme-p p {
+    width: 90%;
+  }
+  .testimonial p {
+    font-size: 18px;
+  }
+  .tml-person h2{
+    font-size: 16px;
+    top: 24px;
+  }
+  .tml-person img {
+    width:70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .skills p {
+    width: 100%;
+  }
+  .testimonial p {
+    width:90%;
+  }
+  .tml-person img {
+    width:60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .tml-person h2 {
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro h1 {
+    font-size: 2.2em;
+    width: 380px;
+  }
+  .gotwood-content p {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .intro h1 {
+    width: 200px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .afterAboutMe {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .tml-person h2 {
+    top: -4px;
+  }
+}
+
+
