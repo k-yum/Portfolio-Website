@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 /* FONTS */
 
 @font-face {
@@ -28,7 +27,7 @@
 
 @font-face {
   font-family: "custom4";
-  src: url("../_fonts/code bold.otf") format("truetype");
+  src: url("../_fonts/CODE Bold.otf") format("truetype");
 }
 
 @font-face {
@@ -62,6 +61,26 @@ p {
 
 /* INTRO */
 
+button:focus {
+  outline: none;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../_images/space.png) no-repeat right top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .introName h1 {
   font-family: custom, sans-serif;
   text-align: center;
@@ -71,14 +90,7 @@ p {
 }
 
 .intro {
-  width: 100%;
-  background: url('../_images/space.png');
-  background-position: right top;
-  content: "";
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  
   height: 400px;
   z-index: 2;
 }
@@ -298,7 +310,7 @@ nav li a {
 
 /* Subject Titles */
 
-.subjects h1 {
+h1 {
   font-family: custom7;
   color: black;
 }
@@ -311,15 +323,11 @@ nav li a {
 
 /* ABOUT CONTENT */
 
-.about {
-  background-color: white;
+.about:focus {
+  outline: none;
 }
 
 .about-header {
-  background-image: url(../_images/space.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right top;
   padding-top: 35px;
 }
 
@@ -331,11 +339,6 @@ nav li a {
 .aboutme {
   width: 100%;
   padding-top: 20px;
-  background-image: url(../_images/space.png);
-  background-size: cover;
-  background-position: right top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   padding-bottom: 100px;
 }
 
@@ -798,4 +801,6 @@ nav li a {
     top: -4px;
   }
 }
+
+
 
