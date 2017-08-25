@@ -12,44 +12,50 @@
 </head>
 
 <body>
- 
-  <div id="top">
-  </div>
 
-  <nav class="nav-down">
+  <div id="top"></div>
+
+  <nav class="nav-down" id="nav1">
     <div class="lastMenu">
       <a id="pull"><img src="_images/nav-icon.png"></a>
     </div>
     <div class="logo">
-        <a href="#top" id="logo">
-        </a>
-      </div>
-
-    <div class="nav1">
-      <ul class="clearfix">
-        <li id="l1"><a href="#aboutID">ABOUT</a></li>
-        <li><a href="#projectID">PROJECT</a></li>
-        <li id="l3"><a href="#contactID">CONTACT</a></li>
-      </ul>
-      
+      <a href="#top" id="logo">
+      </a>
     </div>
+    <ul class="clearfix">
+      <li><a href="#aboutID">ABOUT</a></li>
+      <li><a href="#projectID">PROJECT</a></li>
+      <li><a href="#contactID">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <nav class="nav-down" id="nav2">
+
+    <div class="logo">
+      <a href="#top" id="logo">
+      </a>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#aboutID">ABOUT</a>
+        <a href="#projectID">PROJECT</a>
+        <a href="#contactID">CONTACT</a>
+      </div>
+    </div>
+
   </nav>
 
 
 
 
-
-
-      <div class="intro">
-        <div class="introName">
-          <h1>Searching for <br />a website <br />out of this world?</h1>
-        </div>
-
-        
-      </div>
-
-
-
+  <div class="intro">
+    <div class="introName">
+      <h1>Searching for <br />a website <br />out of this world?</h1>
+    </div>
+  </div>
 
   <div class="subjects">
     <div class="about" id="aboutID">
@@ -57,8 +63,8 @@
         <div class="title about-header">
           <h1>Hi, my name is Kevin.<br /> I design and build websites.</h1>
           <div class="resume">
-          <p><a href="_download/Kevin%20Yum%20-%20Resume.docx" download target="_blank">Download Resume</a></p>
-        </div>
+            <p><a href="_download/Kevin%20Yum%20-%20Resume.docx" download target="_blank">Download Resume</a></p>
+          </div>
         </div>
       </div>
       <div class="row full-width">
@@ -74,7 +80,9 @@
               <div class="afterAboutMe">
                 <img src="_images/fb_icon2.png" id="fb_icon">
                 <p>View my
-                  <a href="https://www.facebook.com/kevin.yum.1" target="_blank"><bold>facebook profile</bold></a> for more info about me</p>
+                  <a href="https://www.facebook.com/kevin.yum.1" target="_blank">
+                    <bold>facebook profile</bold>
+                  </a> for more info about me</p>
               </div>
             </div>
           </div>
@@ -113,22 +121,22 @@
         </div>
       </div>
       <div class="gw1">
-      <div class="row full-width">
-        <div class="medium-3 large-3 large-push-2 columns">
-          <div class="gotwood-content">
-            <h2 id="gotwoodH">Got Wood Floors</h2>
-            <p>Got Wood Floors is a new wood flooring company dedicated to using only real wood for all its services. The website was made using HTML,CSS,JavaScript, and Foundation.</p>
-            <div class="button-container">
-              <a href="http://www.gotwoodsocal.com/" target="_blank"><span onclick="openGW()"><button type="button" class="open-overlay">Visit Site</button></span></a>
+        <div class="row full-width">
+          <div class="medium-3 large-3 large-push-2 columns">
+            <div class="gotwood-content">
+              <h2 id="gotwoodH">Got Wood Floors</h2>
+              <p>Got Wood Floors is a new wood flooring company dedicated to using only real wood for all its services. The website was made using HTML,CSS,JavaScript, and Foundation.</p>
+              <div class="button-container">
+                <a href="http://www.gotwoodsocal.com/" target="_blank"><span onclick="openGW()"><button type="button" class="open-overlay">Visit Site</button></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-7 large-7 columns">
+            <div class="showcase">
+              <img src="_images/gwShowcase.png">
             </div>
           </div>
         </div>
-        <div class="medium-7 large-7 columns">
-          <div class="showcase">
-            <img src="_images/gwShowcase.png">
-          </div>
-        </div>
-      </div>
       </div>
       <div class="gw2">
         <div class="row full-width">
@@ -146,12 +154,12 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row full-width">
         <div class="testimonial">
           <p>"Kevin helped showcase my work online by making a modern and responsive website. He's a pleasure to work with!"</p>
           <div class="tml-person">
-          <img src ="_images/roberto.png">
+            <img src="_images/roberto.png">
             <h2>Roberto Araniva, Manager, Got Wood Floors</h2>
           </div>
         </div>

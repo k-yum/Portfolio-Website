@@ -43,9 +43,7 @@
   src: url("../_fonts/coolvetica rg.ttf") format("truetype");
 }
 
-p {
-
-}
+p {}
 
 .introName h1 {
   font-family: custom, sans-serif;
@@ -90,13 +88,12 @@ p {
   z-index: 2;
 }
 
-
-
 .container {
   width: 1000px;
   z-index: 2;
   margin: auto;
 }
+
 
 /*ul {
   width: 1000px;
@@ -123,17 +120,17 @@ li {
   transition-duration: 2s;
 }*/
 
-li > a {
+li>a {
   position: relative;
   color: red;
   text-decoration: none;
 }
 
-li > a:hover {
+li>a:hover {
   color: red;
 }
 
-li > a:before {
+li>a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -149,13 +146,16 @@ li > a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li > a:hover:before {
+li>a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz- transform: scaleX(1);
   transform: scaleX(1);
 }
+
+
 /* responsive nav */
+
 #logo {
   width: 70px;
   height: 70px;
@@ -167,11 +167,10 @@ li > a:hover:before {
 
 #logo:hover {
   animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-
 }
 
 .nav-up {
-  top: -220px;
+  top: -280px;
 }
 
 nav {
@@ -234,7 +233,18 @@ nav a#pull {
   display: none;
 }
 
+#nav2 {
+  display: none;
+}
+
 @media screen and (max-width: 1300px) {
+  #nav1 {
+    display: none;
+  }
+  #nav2 {
+    display: block;
+  }
+  
   nav {
     width: 100%;
   }
@@ -256,13 +266,11 @@ nav a#pull {
   }
   nav a {
     float: left;
-
   }
   nav h2 {
     left: 25%;
   }
   .clearfix {
-
     z-index: 1;
   }
 }
@@ -271,7 +279,6 @@ nav a#pull {
   nav {
     height: 50px;
   }
-
   nav ul {
     display: none;
     height: auto;
@@ -283,7 +290,6 @@ nav a#pull {
   }
   nav a#pull {
     display: block;
-
     width: 50px;
     position: relative;
     float: left;
@@ -306,7 +312,9 @@ nav a#pull {
   }
 }
 
+
 /**/
+
 
 /*li a {
   color: white;
@@ -325,7 +333,6 @@ li:hover {
 
 
 /*a tags */
-
 
 .projects a {
   font-family: "custom2";
@@ -459,7 +466,7 @@ li:hover {
 
 #aboutme-p p {
   color: white;
-  width: 100%; 
+  width: 100%;
 }
 
 .afterAboutMe {
@@ -511,7 +518,7 @@ li:hover {
   background-color: #FFCC3B;
 }
 
-.skill-header h1{
+.skill-header h1 {
   margin-bottom: 50px;
   /*color: yellow;*/
   color: darkslategray;
@@ -536,7 +543,6 @@ li:hover {
   font-weight: bold;
   word-spacing: 6px;
 }
-
 
 #hiwHeader {
   padding-bottom: 30px;
@@ -569,7 +575,7 @@ li:hover {
 
 /* Project Content */
 
-.projects { 
+.projects {
   background-color: white;
   padding-bottom: 100px;
   padding-top: 50px;
@@ -672,7 +678,7 @@ li:hover {
   margin-top: 80px;
 }
 
-.testimonial p{
+.testimonial p {
   width: 660px;
   margin: auto;
   text-align: center;
@@ -689,11 +695,11 @@ li:hover {
   margin-top: 20px;
 }
 
-.tml-person img{
+.tml-person img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  float:left;
+  float: left;
 }
 
 .tml-person h2 {
@@ -706,6 +712,7 @@ li:hover {
   color: lightslategray;
   font-weight: bold;
 }
+
 
 /* Contact content */
 
@@ -872,6 +879,7 @@ li:hover {
   *zoom: 1;
 }
 
+
 /* Media Queries */
 
 .gw2 {
@@ -942,12 +950,12 @@ li:hover {
   .testimonial p {
     font-size: 18px;
   }
-  .tml-person h2{
+  .tml-person h2 {
     font-size: 16px;
     top: 24px;
   }
   .tml-person img {
-    width:70px;
+    width: 70px;
     height: 70px;
   }
 }
@@ -957,10 +965,10 @@ li:hover {
     width: 100%;
   }
   .testimonial p {
-    width:90%;
+    width: 90%;
   }
   .tml-person img {
-    width:60px;
+    width: 60px;
     height: 60px;
   }
 }
@@ -1002,3 +1010,95 @@ li:hover {
 }
 
 
+/* Dropdown Button */
+
+.dropbtn {
+  background-image: url(../_images/nav-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin-left: 10px;
+  padding: 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: dimgray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+
+.dropdown-content a {
+  position: relative;
+  color: dimgray;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: red;
+}
+
+.dropdown-content a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dropdown-content a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz- transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display: block;
+}
