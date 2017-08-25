@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+
+/* FONTS */
+
 @font-face {
   font-family: "funsized";
   src: url('../_fonts/FunSized.ttf') format('truetype');
@@ -45,12 +48,28 @@
 
 p {}
 
+
+/* INTRO */
+
 .introName h1 {
   font-family: custom, sans-serif;
   text-align: center;
   font-size: 4.7em;
   color: white;
   padding-top: 100px;
+}
+
+.intro {
+  width: 100%;
+  background: url('../_images/space.png');
+  background-position: right top;
+  content: "";
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  z-index: 2;
 }
 
 .resume {
@@ -75,50 +94,8 @@ p {}
   transition-duration: 2s;
 }
 
-.intro {
-  width: 100%;
-  background: url('../_images/space.png');
-  background-position: right top;
-  content: "";
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 400px;
-  z-index: 2;
-}
 
-.container {
-  width: 1000px;
-  z-index: 2;
-  margin: auto;
-}
-
-
-/*ul {
-  width: 1000px;
-  position: relative;
-  top: 180px;
-  display: table;
-  border-spacing: 40px 0px;
-  margin: auto;
-}
-
-li {
-  display: table-cell;
-  width: 200px;
-  height: 70px;
-  padding: 10px;
-  text-align: center;
-  background-color: ;
-  vertical-align: middle;
-  font-family: custom6;
-  color: #AD353A;
-  font-size: 1.6em;
-  border: solid 2px white;
-  border-radius: 20px;
-  transition-duration: 2s;
-}*/
+/* RESPONSIVE NAV */
 
 li>a {
   position: relative;
@@ -152,9 +129,6 @@ li>a:hover:before {
   -moz- transform: scaleX(1);
   transform: scaleX(1);
 }
-
-
-/* responsive nav */
 
 #logo {
   width: 70px;
@@ -225,16 +199,83 @@ nav li a {
   -webkit-box-sizing: border-box;
 }
 
-nav a#pull {
-  display: none;
-}
-
-.nav2 {
-  display: none;
-}
-
 #nav2 {
   display: none;
+}
+
+/* nav2 */
+
+.dropbtn {
+  background-image: url(../_images/nav-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin-left: 10px;
+  padding: 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: dimgray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a {
+  position: relative;
+  color: dimgray;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: red;
+}
+
+.dropdown-content a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dropdown-content a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz- transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.show {
+  display: block;
 }
 
 @media screen and (max-width: 1300px) {
@@ -244,135 +285,7 @@ nav a#pull {
   #nav2 {
     display: block;
   }
-  
-  nav {
-    width: 100%;
-  }
-  nav ul {
-    width: 100%;
-    display: block;
-    height: auto;
-    z-index: 1;
-  }
-  nav li {
-    width: 100%;
-    float: left;
-    position: relative;
-    top: -15px;
-    z-index: 1;
-  }
-  nav li a {
-    float: left;
-  }
-  nav a {
-    float: left;
-  }
-  nav h2 {
-    left: 25%;
-  }
-  .clearfix {
-    z-index: 1;
-  }
 }
-
-@media only screen and (max-width: 1300px) {
-  nav {
-    height: 50px;
-  }
-  nav ul {
-    display: none;
-    height: auto;
-    width: 100%;
-  }
-  .lastMenu {
-    width: 100%;
-    background-color: #283744;
-  }
-  nav a#pull {
-    display: block;
-    width: 50px;
-    position: relative;
-    float: left;
-  }
-  nav a#pull:after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-  nav img {
-    width: 30px;
-    height: 30px;
-  }
-  nav a#pull:hover {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-  }
-}
-
-
-/**/
-
-
-/*li a {
-  color: white;
-  text-shadow: 1px 1px black;
-}
-
-li a:hover {
-  color: white;
-}
-
-li:hover {
-  background-color: #AD353A;
-  color: white;
-  transition-duration: 2s;
-}*/
-
-
-/*a tags */
-
-.projects a {
-  font-family: "custom2";
-  color: black;
-}
-
-.contact a {
-  font-family: "custom2";
-  color: black;
-}
-
-
-/*make li blocks same width and height as the table cells & make it vertical
-@media screen and (max-width: 1000px) {
-  .container {
-    width: 1000px;
-    z-index: 2;
-    margin: auto;
-  }
-  ul {
-    width: 1000px;
-    position: absolute;
-    top: 560px;
-    display: table;
-    border-spacing: 40px 0px
-  }
-  li {
-    display: inline-block;
-    width: 200px;
-    height: 70px;
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    background-color: aliceblue;
-    vertical-align: middle;
-  }
-  #li1 {
-    margin-left: 0px;
-  }
-}*/
 
 
 /* Subject Titles */
@@ -387,54 +300,8 @@ li:hover {
   padding: 10px 0px;
 }
 
-.title h1 {
-  text-align: center;
-}
 
-#aboutCol2 {
-  background-color: antiquewhite;
-  height: 1600px;
-}
-
-#projectCol1 {
-  background-color: antiquewhite;
-  height: 750px;
-}
-
-#projectCol2 {
-  height: 750px;
-}
-
-#contactCol1 {
-  background-color: #AD353A;
-}
-
-
-/* link underline animation */
-
-.about h4,
-.contact h4,
-.about h4 a,
-.contact h4 a {
-  color: black;
-}
-
-.projects h4,
-.projects h4 a {
-  color: black;
-}
-
-.about h4 a:hover,
-.contact h4 a:hover {
-  border-bottom: solid 2px white;
-}
-
-.projects h4 a:hover {
-  border-bottom: solid 2px black;
-}
-
-
-/* About Content */
+/* ABOUT CONTENT */
 
 .about {
   background-color: white;
@@ -509,10 +376,6 @@ li:hover {
 .skills {
   padding: 50px;
   width: 100%;
-  /*background-image: url(../_images/space.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;*/
   height: auto;
   z-index: 2;
   background-color: #FFCC3B;
@@ -520,7 +383,6 @@ li:hover {
 
 .skill-header h1 {
   margin-bottom: 50px;
-  /*color: yellow;*/
   color: darkslategray;
 }
 
@@ -530,22 +392,6 @@ li:hover {
   margin-top: 30px;
   text-align: left;
   max-width: 600px;
-}
-
-.about h2 {
-  padding-top: 40px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: custom6;
-  color: navajowhite;
-  font-size: 2.7em;
-  font-weight: bold;
-  word-spacing: 6px;
-}
-
-#hiwHeader {
-  padding-bottom: 30px;
 }
 
 .about img {
@@ -558,22 +404,20 @@ li:hover {
   text-align: center;
   margin: 20px;
   font-family: custom3;
-  /*color: yellow;*/
   color: darkslategray;
   font-weight: bold;
 }
 
 .skills p {
   width: 80%;
-  /*color: white;*/
-  color: black;
+  color: dimgray;
   margin: auto;
   text-align: center;
   margin-bottom: 60px;
 }
 
 
-/* Project Content */
+/* PROJECT CONTENT */
 
 .projects {
   background-color: white;
@@ -633,47 +477,6 @@ li:hover {
   transition-duration: 1s;
 }
 
-.gwProject-content {
-  margin-right: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 750px;
-  border: 1px 1px white;
-  /*margin-left: -15px;
-  margin-right: -15px;*/
-  z-index: 1;
-  overflow: hidden;
-}
-
-.gwProject-BG {
-  width: 100%;
-  height: 100%;
-  background-image: url(../_images/kitchen-2400367_1920.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation-direction: reverse;
-  animation: zoom-normal 10s infinite;
-  /*-webkit-transform: scale(1);
-  -webkit-transition-delay: .2s;
-  -webkit-transition-duration: 5s;*/
-}
-
-.gwProject-BG:hover {
-  /*opacity: 0.85;
-  -webkit-transform: scale(1.3);
-  -webkit-transition-delay: .2s;
-  -webkit-transition-duration: 5s;
-  -moz-transform: scale(1.2);
-  -moz-transition-delay: .2s;
-  -moz-transition-duration: 5s;
-  width: 100%;
-  z-index: -2;*/
-  animation: zoom 5s;
-  animation-fill-mode: forwards;
-}
-
 .testimonial {
   margin-top: 80px;
 }
@@ -714,13 +517,10 @@ li:hover {
 }
 
 
-/* Contact content */
+/* CONTACT CONTENT */
 
 .contact-img {
   width: 100%;
-  /*background-image: url(../_images/keyboard.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;*/
   background-color: #FFCC3B;
   height: 620px;
   z-index: 2;
@@ -763,52 +563,6 @@ li:hover {
   margin-top: 20px;
   text-align: center;
 }
-
-
-/*project see more animation */
-
-
-/*.noscroll { overflow: hidden; }
-
-.overlay { 
-   position: fixed; 
-   overflow-y: scroll;
-   top: 0; right: 0; bottom: 0; left: 0; }
-
-[aria-hidden="true"] { display: none; }
-[aria-hidden="false"] { display: block; }
-
-.overlay div {
-   margin: 0px;
-   width: 100%;
-   max-width: 100%;
-   padding: 0px;
-   min-height: 200vh;
-   background: rgba(255,255,255, .95);
-}
-.overlay {
-    background:  rgba(40,40,40, .75);
-}*/
-
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(225, 225, 225, 1);
-  overflow-y: scroll;
-  transition: 0.5s ease-out;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
 
 /* Keyframes */
 
@@ -861,7 +615,6 @@ li:hover {
     background-size: 100%;
   }
 }
-
 
 /* Clearfix */
 
@@ -1009,96 +762,3 @@ li:hover {
   }
 }
 
-
-/* Dropdown Button */
-
-.dropbtn {
-  background-image: url(../_images/nav-icon.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  margin-left: 10px;
-  padding: 18px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover,
-.dropbtn:focus {
-  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-  color: dimgray;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-
-/* Change color of dropdown links on hover */
-
-
-.dropdown-content a {
-  position: relative;
-  color: dimgray;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  color: red;
-}
-
-.dropdown-content a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: red;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.dropdown-content a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -moz- transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-.show {
-  display: block;
-}
