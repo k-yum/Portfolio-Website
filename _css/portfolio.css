@@ -46,7 +46,18 @@
   src: url("../_fonts/coolvetica rg.ttf") format("truetype");
 }
 
-p {}
+@font-face {
+  font-family: "custom8";
+  src: url("../_fonts/GeosansLight.ttf") format("truetype");
+}
+
+p {
+  font-family: custom8;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  word-spacing: .3px;
+}
 
 
 /* INTRO */
